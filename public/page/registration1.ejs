@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/registration.css">
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="https://40y2ct3ukiiqtpomj3dvyhc1-wpengine.netdna-ssl.com/wp-content/uploads/icon-avatar-default.png"
+                    id="icon" alt="User Icon" />
+            </div>
+
+            <!-- email Form -->
+            <form action="/auth/registration" method="POST">
+                <input type="text" id="name" class="fadeIn second" name="name" placeholder="Name">
+                <input type="email" id="email" class="fadeIn second" name="email" placeholder="Email">
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+
+
+
+                <p> Male <input type="radio" name="gender" id="Male" value="Male" />
+                    Female <input type="radio" name="gender" id="Female" value="Female" />
+                </p>
+
+                <input type="submit" class="fadeIn fourth" value="Registration">
+            </form>
+
+
+            <!-- Remind Passoward -->
+            <div id="formFooter">
+                <a class="underlineHover" href="/auth/login">Back to login</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
